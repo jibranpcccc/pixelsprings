@@ -1,4 +1,9 @@
 extracted_designs/
+audit_results/
+audit_slices/
+*.txt
+*.py
+*.ps1
 *.pyc
 __pycache__/
 .DS_Store
