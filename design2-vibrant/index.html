@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelSprings — The design team you don't have to hire</title>
+  <meta name="description" content="Unlimited branding, UI/UX, and web design — delivered by a senior team, for one flat monthly rate. Pause or cancel anytime." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              lime: '#84CC16',
+              neon: '#A3E635',
+              dark: '#0B0D11',
+              card: '#14171F',
+              border: '#27272A',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #0B0D11;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .text-glow {
+      text-shadow: 0 0 20px rgba(163, 230, 53, 0.4);
+    }
+    .neon-border {
+      box-shadow: 0 0 15px rgba(132, 204, 22, 0.2);
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Header (Dark) -->
+  <header class="bg-[#0B0D11] text-white border-b border-neutral-800/80 sticky top-0 z-50 backdrop-blur-lg">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-8 h-8 rounded-lg bg-brand-lime flex items-center justify-center font-black text-black text-lg shadow-sm group-hover:scale-105 transition-transform">
+          P
+        </div>
+        <span class="text-xl font-extrabold tracking-tight font-display">PixelSprings</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-neutral-300">
+        <a href="#services" class="hover:text-brand-neon transition-colors">Services</a>
+        <a href="#work" class="hover:text-brand-neon transition-colors">Work</a>
+        <a href="#pricing" class="hover:text-brand-neon transition-colors">Pricing</a>
+      </nav>
+
+      <!-- Right CTAs -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#contact" class="px-5 py-2.5 rounded-full border border-neutral-700 text-xs font-bold text-white hover:bg-neutral-800 transition-colors flex items-center gap-2">
+          <span>Book a call</span>
+          <span class="text-xs">📞</span>
+        </a>
+        <a href="#pricing" class="px-6 py-2.5 rounded-full bg-white text-black text-xs font-bold hover:bg-neutral-200 transition-colors flex items-center gap-1.5 shadow-sm">
+          <span>Start a Project</span>
+          <span class="text-xs font-bold">➔</span>
+        </a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button id="vibrant-mobile-btn" class="md:hidden p-2 text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="vibrant-mobile-menu" class="hidden md:hidden bg-[#14171F] border-b border-neutral-800 px-6 py-6 flex flex-col gap-4 text-sm font-semibold">
+      <a href="#services" class="v-link text-neutral-300 hover:text-white">Services</a>
+      <a href="#work" class="v-link text-neutral-300 hover:text-white">Work</a>
+      <a href="#pricing" class="v-link text-neutral-300 hover:text-white">Pricing</a>
+      <a href="#contact" class="v-link mt-2 text-center py-3 rounded-full bg-brand-lime text-black font-bold">Start a Project ➔</a>
+    </div>
+  </header>
+
+  <!-- Hero Section (Dark & Punchy) -->
+  <section class="bg-[#0B0D11] text-white pt-16 pb-24 md:pt-24 md:pb-32 border-b border-neutral-800 relative overflow-hidden">
+    
+    <!-- Background Glows -->
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-lime/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7">
+          
+          <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.08] font-display mb-6">
+            The design team you <br class="hidden sm:block"/>don't have to hire.
+          </h1>
+
+          <p class="text-base sm:text-lg text-neutral-400 font-normal leading-relaxed max-w-xl mb-8">
+            Unlimited branding, UI/UX, and web design — delivered by a senior team, for one flat monthly rate. Pause or cancel anytime.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-4 mb-10">
+            <a href="#pricing" class="px-8 py-3.5 rounded-full bg-white text-black text-sm font-bold hover:bg-neutral-200 transition-colors shadow-lg shadow-white/10">
+              View Plans
+            </a>
+            <a href="#work" class="px-8 py-3.5 rounded-full border border-neutral-700 text-white text-sm font-bold hover:bg-neutral-800/80 transition-colors">
+              See Our Work
+            </a>
+          </div>
+
+          <!-- Micro Checklist -->
+          <div class="flex flex-wrap items-center gap-6 text-xs text-neutral-300 font-medium">
+            <div class="flex items-center gap-2">
+              <span class="w-4 h-4 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center text-[10px] font-bold">✓</span>
+              <span>No hiring</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-4 h-4 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center text-[10px] font-bold">✓</span>
+              <span>No freelancer juggling</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-4 h-4 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center text-[10px] font-bold">✓</span>
+              <span>Just great creative work</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Mockup Graphic -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-lg rounded-2xl overflow-hidden border border-neutral-800/80 shadow-2xl bg-neutral-900/60 p-2">
+            <img src="assets/hero_3d_mockup.jpg" alt="PixelSprings Design Mockups" class="w-full h-auto rounded-xl object-cover" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: More Than A Design Subscription -->
+  <section class="py-24 bg-white border-b border-neutral-100">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-5">
+          <span class="text-xs font-bold text-neutral-400 uppercase tracking-widest block mb-2">OVERVIEW</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-editorial-dark mb-4">
+            More than a design subscription
+          </h2>
+          <h3 class="text-lg font-semibold text-neutral-500 mb-6">
+            Your creative team, without the overhead.
+          </h3>
+          <p class="text-sm text-neutral-600 leading-relaxed mb-6">
+            PixelSprings gives businesses and agencies reliable access to professional design and development without the cost and complexity of building an in-house team. From everyday marketing assets to complete websites, we're here when you need us.
+          </p>
+        </div>
+
+        <!-- Right 4 Benefit Badges -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          
+          <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80 hover:border-brand-lime/50 transition-all">
+            <div class="w-9 h-9 rounded-lg bg-black text-brand-neon font-black flex items-center justify-center text-xs mb-4">
+              01
+            </div>
+            <h4 class="text-base font-bold text-editorial-dark mb-2">In-House Quality, Without the Overhead</h4>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Get the consistency of an internal creative team without salaries, recruitment, training, or the management burden.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80 hover:border-brand-lime/50 transition-all">
+            <div class="w-9 h-9 rounded-lg bg-black text-brand-neon font-black flex items-center justify-center text-xs mb-4">
+              02
+            </div>
+            <h4 class="text-base font-bold text-editorial-dark mb-2">A Team That Learns Your Brand</h4>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              The more we work together, the better we understand your visual language, preferences, and expectations.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80 hover:border-brand-lime/50 transition-all">
+            <div class="w-9 h-9 rounded-lg bg-black text-brand-neon font-black flex items-center justify-center text-xs mb-4">
+              03
+            </div>
+            <h4 class="text-base font-bold text-editorial-dark mb-2">One Partner for Creative & Web</h4>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              From brand assets and marketing design to UI/UX and WordPress development, keep your creative work under one roof.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200/80 hover:border-brand-lime/50 transition-all">
+            <div class="w-9 h-9 rounded-lg bg-black text-brand-neon font-black flex items-center justify-center text-xs mb-4">
+              04
+            </div>
+            <h4 class="text-base font-bold text-editorial-dark mb-2">Simple, Predictable Pricing</h4>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              One monthly subscription, clear deliverables, and no surprise hourly invoices or unnecessary project fees.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Workflow Process -->
+  <section class="py-24 bg-neutral-50 border-b border-neutral-200/70">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-editorial-dark mb-3">
+          Great creative work, without the complicated process
+        </h2>
+        <p class="text-sm text-neutral-500">
+          A simple workflow keeps your creative pipeline moving.
+        </p>
+      </div>
+
+      <!-- 3 Steps Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <div class="bg-white p-8 rounded-2xl border border-neutral-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold text-neutral-400 block mb-4">STEP 01</span>
+            <h3 class="text-xl font-bold text-editorial-dark mb-3">Choose Your Plan</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Choose the subscription that fits your creative needs and get your team set up in minutes.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-neutral-100 flex items-center gap-4 text-xs font-bold text-neutral-400">
+            <span>Spark</span> • <span>Flow</span> • <span>Forge</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-neutral-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold text-neutral-400 block mb-4">STEP 02</span>
+            <h3 class="text-xl font-bold text-editorial-dark mb-3">Share Your Vision</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Send us your next request with the details, files, references and priorities we need to get started.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-neutral-100 flex items-center gap-2 text-xs font-semibold text-neutral-500">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>Trello / Slack / Email sync</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-neutral-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono font-bold text-neutral-400 block mb-4">STEP 03</span>
+            <h3 class="text-xl font-bold text-editorial-dark mb-3">Review, Revise & Enjoy</h3>
+            <p class="text-xs text-neutral-600 leading-relaxed">
+              Review the work, share feedback, and we'll refine it until the direction is right. Then send us your next request.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-neutral-100 flex items-center gap-2 text-xs font-semibold text-neutral-500">
+            <span class="w-2 h-2 rounded-full bg-brand-lime"></span>
+            <span>100% Unlimited Revisions</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Files Delivered Banner -->
+      <div class="bg-white rounded-2xl p-8 border border-neutral-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h4 class="text-lg font-bold text-editorial-dark mb-1">Files are delivered</h4>
+          <p class="text-xs text-neutral-500 max-w-md">
+            Receive final designs in every format you need, ready to use across every channel.
+          </p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="px-5 py-2.5 rounded-full bg-neutral-900 text-white text-xs font-bold flex items-center gap-2">
+            <span>Works with your stack</span>
+            <span>📥</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Creative Support Benefits -->
+  <section class="py-24 bg-white border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-editorial-dark">
+          Creative support that keeps up with your business
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200 flex flex-col">
+          <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center text-sm mb-4">
+            ★
+          </div>
+          <h3 class="text-base font-bold text-editorial-dark mb-2">Reliable Quality</h3>
+          <p class="text-xs text-neutral-600 leading-relaxed">
+            Professional creative work built around your brand and your standards.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200 flex flex-col">
+          <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center text-sm mb-4">
+            ⚡
+          </div>
+          <h3 class="text-base font-bold text-editorial-dark mb-2">Fast, Practical Turnaround</h3>
+          <p class="text-xs text-neutral-600 leading-relaxed">
+            Keep projects moving with clear timelines based on the complexity of each request.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200 flex flex-col">
+          <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center text-sm mb-4">
+            ♾️
+          </div>
+          <h3 class="text-base font-bold text-editorial-dark mb-2">Ongoing Creative Requests</h3>
+          <p class="text-xs text-neutral-600 leading-relaxed">
+            Keep your creative pipeline full and submit the next request whenever you're ready.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200 flex flex-col">
+          <div class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center text-sm mb-4">
+            👥
+          </div>
+          <h3 class="text-base font-bold text-editorial-dark mb-2">Dedicated Creative Team</h3>
+          <p class="text-xs text-neutral-600 leading-relaxed">
+            Work with a team that gets to know your brand, preferences and workflow.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dark Capability Banner -->
+  <section id="services" class="py-24 bg-[#0B0D11] text-white border-b border-neutral-800 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-display mb-4">
+        From brand identity to full websites we make your ideas happen.
+      </h2>
+      <p class="text-sm text-neutral-400 mb-10 max-w-xl mx-auto">
+        One creative partner for the design and development work your business needs.
+      </p>
+
+      <!-- Pill badges -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
+        <span class="px-4 py-2 rounded-full border border-neutral-700 bg-neutral-900/80 text-xs font-semibold">Branding & Visual Identity</span>
+        <span class="px-4 py-2 rounded-full border border-neutral-700 bg-neutral-900/80 text-xs font-semibold">Graphic & Marketing Design</span>
+        <span class="px-4 py-2 rounded-full border border-neutral-700 bg-neutral-900/80 text-xs font-semibold">UI/UX & Product Design</span>
+        <span class="px-4 py-2 rounded-full border border-neutral-700 bg-neutral-900/80 text-xs font-semibold">Web Design & Development</span>
+        <span class="px-4 py-2 rounded-full border border-neutral-700 bg-neutral-900/80 text-xs font-semibold">Print & Production Design</span>
+        <span class="px-4 py-2 rounded-full border border-brand-lime/40 text-brand-lime bg-brand-lime/10 text-xs font-semibold">+ more</span>
+      </div>
+
+      <a href="#pricing" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white text-black text-xs font-bold hover:bg-neutral-200 transition-colors">
+        <span>Explore all services</span>
+        <span>➔</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Section: Portfolio Grid ("Good design speaks for itself") -->
+  <section id="work" class="py-24 bg-white border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-editorial-dark mb-3">
+          Good design speaks for itself
+        </h2>
+        <p class="text-sm text-neutral-500">
+          A selection of branding, digital, web and marketing work created for businesses, agencies and growing brands.
+        </p>
+      </div>
+
+      <!-- 8-Card Showcase Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        
+        <div class="group rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-50 hover:shadow-lg transition-all">
+          <div class="aspect-[4/5] bg-neutral-100 overflow-hidden">
+            <img src="assets/portfolio_card1.jpg" alt="Visual Designer Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-4">
+            <div class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider mb-1">BRAND & WEB</div>
+            <div class="text-sm font-bold text-editorial-dark">Studio Showcase 01</div>
+          </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-50 hover:shadow-lg transition-all">
+          <div class="aspect-[4/5] bg-neutral-100 overflow-hidden">
+            <img src="assets/portfolio_card2.jpg" alt="Visual Designer Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-4">
+            <div class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider mb-1">UI/UX & SAAS</div>
+            <div class="text-sm font-bold text-editorial-dark">Studio Showcase 02</div>
+          </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-50 hover:shadow-lg transition-all">
+          <div class="aspect-[4/5] bg-neutral-100 overflow-hidden">
+            <img src="assets/portfolio_card1.jpg" alt="Visual Designer Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-4">
+            <div class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider mb-1">MOBILE APP</div>
+            <div class="text-sm font-bold text-editorial-dark">Studio Showcase 03</div>
+          </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-50 hover:shadow-lg transition-all">
+          <div class="aspect-[4/5] bg-neutral-100 overflow-hidden">
+            <img src="assets/portfolio_card2.jpg" alt="Visual Designer Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-4">
+            <div class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider mb-1">E-COMMERCE</div>
+            <div class="text-sm font-bold text-editorial-dark">Studio Showcase 04</div>
+          </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-50 hover:shadow-lg transition-all">
+          <div class="aspect-[4/5] bg-neutral-100 overflow-hidden">
+            <img src="assets/portfolio_card1.jpg" alt="Visual Designer Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-4">
+            <div class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider mb-1">EDITORIAL PRINT</div>
+            <div class="text-sm font-bold text-editorial-dark">Studio Showcase 05</div>
+          </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-50 hover:shadow-lg transition-all">
+          <div class="aspect-[4/5] bg-neutral-100 overflow-hidden">
+            <img src="assets/portfolio_card2.jpg" alt="Visual Designer Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-4">
+            <div class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider mb-1">3D MOCKUP</div>
+            <div class="text-sm font-bold text-editorial-dark">Studio Showcase 06</div>
+          </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-50 hover:shadow-lg transition-all">
+          <div class="aspect-[4/5] bg-neutral-100 overflow-hidden">
+            <img src="assets/portfolio_card1.jpg" alt="Visual Designer Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-4">
+            <div class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider mb-1">PACKAGING</div>
+            <div class="text-sm font-bold text-editorial-dark">Studio Showcase 07</div>
+          </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden border border-neutral-200 bg-neutral-50 hover:shadow-lg transition-all">
+          <div class="aspect-[4/5] bg-neutral-100 overflow-hidden">
+            <img src="assets/portfolio_card2.jpg" alt="Visual Designer Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-4">
+            <div class="text-[11px] font-bold text-neutral-400 uppercase tracking-wider mb-1">WEBFLOW CMS</div>
+            <div class="text-sm font-bold text-editorial-dark">Studio Showcase 08</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Want to see more CTA -->
+      <div class="text-center pt-8 border-t border-neutral-200">
+        <h3 class="text-xl font-bold text-editorial-dark mb-2">Want to see more?</h3>
+        <p class="text-xs text-neutral-500 mb-6">
+          Explore our full portfolio of branding, websites, UI/UX and marketing design.
+        </p>
+        <a href="#pricing" class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-black hover:text-neutral-600 transition-colors">
+          <span>View All Work</span>
+          <span>➔</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Founder Note Banner -->
+  <section class="py-20 bg-neutral-50 border-b border-neutral-200">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <span class="text-xs font-bold uppercase tracking-widest text-neutral-400 block mb-4">A NOTE FROM OUR FOUNDERS</span>
+      <blockquote class="text-xl sm:text-2xl font-bold tracking-tight text-editorial-dark leading-snug mb-6">
+        “We built Pixel Springs because we saw how much time and money businesses wasted on hiring, managing freelancers, and chasing agencies. Our model gives you a full creative team — without the overhead.”
+      </blockquote>
+      <div class="text-xs font-semibold text-neutral-500">
+        Noman & Umair — Founders, Pixel Springs
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section (Dark Mode) -->
+  <section id="pricing" class="py-24 bg-[#0B0D11] text-white border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-20">
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-display mb-4">
+          One creative team. One simple monthly subscription
+        </h2>
+        <p class="text-sm text-neutral-400">
+          Choose the level of creative support you need. Upgrade when your workload grows.
+        </p>
+      </div>
+
+      <!-- 3 Dark Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mb-16">
+        
+        <!-- Plan 1: CREATIVE -->
+        <div class="bg-neutral-900/90 rounded-3xl p-8 border border-neutral-800 flex flex-col justify-between shadow-xl">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-2">CREATIVE</div>
+            <div class="flex items-baseline gap-1 mb-4">
+              <span class="text-4xl font-extrabold text-white">$799</span>
+              <span class="text-neutral-400 text-xs">/month</span>
+            </div>
+            <p class="text-xs text-neutral-300 font-semibold mb-2">
+              Ongoing design support without hiring another designer.
+            </p>
+            <p class="text-xs text-neutral-500 mb-6 pb-6 border-b border-neutral-800">
+              For businesses and agencies that need reliable creative support.
+            </p>
+
+            <div class="text-[11px] font-bold uppercase tracking-wider text-neutral-400 mb-4">What's included:</div>
+            <ul class="space-y-3 text-xs text-neutral-300 mb-8">
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Unlimited design requests</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Unlimited revisions</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Dedicated creative team</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Branding & visual identity</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Marketing & social media design</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Print, packaging & presentations</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Digital advertising creative</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Source files included</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Brand assets & templates</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Unlimited team members</li>
+              <li class="flex items-center gap-2 text-neutral-400">Pause or cancel anytime</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="w-full py-3.5 rounded-full bg-white text-black text-center text-xs font-bold hover:bg-neutral-200 transition-colors flex items-center justify-center gap-1.5">
+            <span>Start a Project</span>
+            <span>➔</span>
+          </a>
+        </div>
+
+        <!-- Plan 2: CREATIVE + WEB (Featured Lime) -->
+        <div class="bg-neutral-900 rounded-3xl p-8 border-2 border-brand-lime flex flex-col justify-between shadow-2xl relative lg:-translate-y-3">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-brand-lime text-[10px] font-black uppercase tracking-widest text-black shadow-md">
+            MOST POPULAR
+          </div>
+
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-brand-lime mb-2">CREATIVE + WEB</div>
+            <div class="flex items-baseline gap-1 mb-4">
+              <span class="text-4xl font-extrabold text-white">$1,499</span>
+              <span class="text-neutral-400 text-xs">/month</span>
+            </div>
+            <p class="text-xs text-neutral-300 font-semibold mb-2">
+              Your ongoing creative and web partner.
+            </p>
+            <p class="text-xs text-neutral-500 mb-6 pb-6 border-b border-neutral-800">
+              For teams that need design, websites, and development under one creative partner.
+            </p>
+
+            <div class="text-[11px] font-bold uppercase tracking-wider text-brand-lime mb-4">Everything in Creative, plus:</div>
+            <ul class="space-y-3 text-xs text-neutral-200 mb-8">
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> <strong>2 active requests</strong></li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> UI/UX design</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Landing page design</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Responsive web design</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Figma design systems</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Webflow design & development</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Website updates & improvements</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Mobile-responsive implementation</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> CMS setup & content structure</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Basic on-page SEO</li>
+              <li class="flex items-center gap-2 text-neutral-400">Pause or cancel anytime</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="w-full py-3.5 rounded-full bg-brand-lime text-black text-center text-xs font-black hover:bg-brand-neon transition-colors shadow-lg flex items-center justify-center gap-1.5">
+            <span>Start a Project</span>
+            <span>➔</span>
+          </a>
+        </div>
+
+        <!-- Plan 3: SCALE -->
+        <div class="bg-neutral-900/90 rounded-3xl p-8 border border-neutral-800 flex flex-col justify-between shadow-xl">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-2">SCALE</div>
+            <div class="flex items-baseline gap-1 mb-4">
+              <span class="text-4xl font-extrabold text-white">$2,499</span>
+              <span class="text-neutral-400 text-xs">/month</span>
+            </div>
+            <p class="text-xs text-neutral-300 font-semibold mb-2">
+              Your full web and creative partner.
+            </p>
+            <p class="text-xs text-neutral-500 mb-6 pb-6 border-b border-neutral-800">
+              For brands that need design, development, and ongoing site support — all in one.
+            </p>
+
+            <div class="text-[11px] font-bold uppercase tracking-wider text-neutral-400 mb-4">Everything in Creative + Web, plus:</div>
+            <ul class="space-y-3 text-xs text-neutral-300 mb-8">
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> <strong>3 active requests</strong></li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Webflow or WordPress — your choice</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Custom code & integrations</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Advanced functionality (APIs, forms, tools)</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Ongoing maintenance & updates</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Bug fixes & plugin management</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Priority queue (48-hour first drafts)</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Dedicated Slack channel</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Analytics setup & monthly reporting</li>
+              <li class="flex items-center gap-2"><span class="text-brand-lime">✓</span> Performance optimization (speed, SEO)</li>
+              <li class="flex items-center gap-2 text-neutral-400">Pause or cancel anytime</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="w-full py-3.5 rounded-full bg-white text-black text-center text-xs font-bold hover:bg-neutral-200 transition-colors flex items-center justify-center gap-1.5">
+            <span>Start a Project</span>
+            <span>➔</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Pricing Footnotes -->
+      <div class="text-center space-y-2 text-xs text-neutral-400">
+        <div>Not sure which plan is right for you? Tell us what you're working on and we'll help you choose. <a href="#contact" class="text-brand-lime underline ml-1">Book a Free Call</a></div>
+        <div>How does unlimited work? Send as many requests as you need. Your plan determines how many requests we actively work on at once.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-24 bg-white border-b border-neutral-200">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-editorial-dark mb-3">
+        A creative partner you can rely on.
+      </h2>
+      <p class="text-sm text-neutral-500 mb-12">
+        Real feedback from the businesses and teams we've supported.
+      </p>
+
+      <!-- Quote Card -->
+      <div class="p-8 sm:p-12 rounded-3xl bg-neutral-50 border border-neutral-200 shadow-sm text-left">
+        <div class="text-brand-lime text-2xl mb-4 font-black">★★★★★</div>
+        <p class="text-base sm:text-lg text-neutral-700 leading-relaxed italic mb-8">
+          “PixelSpring Agency's subscription service is a game-changer! Their design expertise covers everything we need — from product design to UI/UX. The animations they create breathe life into our digital products, making them really stand out.”
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-neutral-800 text-white font-bold flex items-center justify-center text-sm">
+            SK
+          </div>
+          <div>
+            <div class="text-sm font-bold text-editorial-dark">Salman Khan</div>
+            <div class="text-xs text-neutral-500">CEO at Being Human</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section (14 Items) -->
+  <section id="faq" class="py-24 bg-neutral-50 border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        
+        <div class="lg:col-span-5">
+          <h2 class="text-4xl font-extrabold tracking-tight font-display text-editorial-dark mb-4">
+            QUESTIONS ANSWERED.
+          </h2>
+          <p class="text-sm text-neutral-500 mb-8 max-w-sm">
+            Still have questions? We're always one message away.
+          </p>
+          <a href="#contact" class="inline-block px-6 py-3 rounded-full border border-neutral-300 bg-white text-xs font-bold text-black hover:bg-neutral-100 transition-colors shadow-sm">
+            Ask Us Anything
+          </a>
+        </div>
+
+        <!-- Right 14-Question Accordion -->
+        <div class="lg:col-span-7 bg-white p-8 rounded-3xl border border-neutral-200 shadow-sm divide-y divide-neutral-200">
+          
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>How does the PixelSprings subscription work?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              Subscribe to a monthly plan, add design requests to your queue, and we deliver them one by one (or concurrently depending on your plan tier). You can pause or cancel anytime.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>What types of design work can I request?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              We handle branding, visual identity, UI/UX design, landing pages, Webflow, WordPress, marketing collateral, social creatives, packaging, and presentation decks.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Can I submit unlimited requests?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              Yes! You can load as many requests into your backlog as you wish. We work through them based on your plan's active capacity.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>How many revisions are included?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              100% unlimited revisions until you are completely thrilled with the final result.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>How quickly will I receive my designs?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              Standard requests are delivered within 48 to 72 hours on business days.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Will I have a dedicated designer?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              Yes, you work directly with a senior designer and creative director assigned to your account.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Can PixelSprings work under my agency's brand?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              Absolutely. We operate as your silent behind-the-scenes white-label production arm under full NDA.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Can I use PixelSprings for multiple clients?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              Yes, agencies frequently queue requests for multiple different client brands.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Do you provide source files?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              Always. Full Figma files, Illustrator vectors, Photoshop PSDs, and clean code are delivered.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Can you handle printing?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              We prepare 100% print-ready CMYK files with bleed and crop marks for your local or online print shop.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Do you build websites?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              Yes, our Creative + Web and Scale plans include full responsive Webflow and WordPress development.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Can I pause my subscription?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              Yes, billing is based on 31-day periods. If you use 20 days and have no more tasks, pause and keep 11 days.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Is there a long-term contract?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              No contracts. You can cancel with one click inside your billing portal at any time.
+            </div>
+          </div>
+
+          <div class="v-faq-item py-4 cursor-pointer">
+            <div class="flex items-center justify-between text-sm font-bold text-editorial-dark">
+              <span>Where is PixelSprings based?</span>
+              <span class="v-faq-icon font-mono text-neutral-400">+</span>
+            </div>
+            <div class="v-faq-answer hidden text-xs text-neutral-600 leading-relaxed pt-3">
+              We are proudly based in Texas and serve ambitious companies and agencies worldwide.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Lead Form ("Let's create something great.") -->
+  <section id="contact" class="py-24 bg-white border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        
+        <div class="lg:col-span-5">
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-display text-editorial-dark mb-4">
+            Let's create something great.
+          </h2>
+          <p class="text-sm text-neutral-500 mb-8 max-w-sm">
+            Tell us a little about what you need. We'll review your request and get back to you.
+          </p>
+
+          <div class="space-y-6 pt-6 border-t border-neutral-200">
+            <div class="p-6 rounded-2xl bg-neutral-50 border border-neutral-200">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-lg">👤</span>
+                <span class="text-sm font-bold text-editorial-dark">Prefer to talk?</span>
+              </div>
+              <p class="text-xs text-neutral-500 mb-3">Skip the form. Let's talk directly.</p>
+              <a href="mailto:contact@pixelsprings.com" class="text-xs font-bold text-black hover:text-brand-lime transition-colors">Book a Free Consultation ➔</a>
+            </div>
+
+            <div>
+              <div class="text-xs font-bold text-neutral-400 uppercase tracking-wider mb-1">Email Us</div>
+              <a href="mailto:contact@pixelsprings.com" class="text-sm font-bold text-editorial-dark hover:underline">contact@pixelsprings.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card with Interactive Human Check -->
+        <div class="lg:col-span-7 bg-neutral-50 p-8 sm:p-10 rounded-3xl border border-neutral-200">
+          
+          <h3 class="text-base font-bold text-editorial-dark mb-6">Tell us a little about your project.</h3>
+
+          <form id="vibrant-contact-form" class="space-y-4">
+            <div>
+              <input type="text" name="name" required placeholder="John Smith" class="w-full px-4 py-3 rounded-xl border border-neutral-200 text-xs focus:outline-none focus:border-black bg-white" />
+            </div>
+
+            <div>
+              <input type="email" name="email" required placeholder="you@company.com" class="w-full px-4 py-3 rounded-xl border border-neutral-200 text-xs focus:outline-none focus:border-black bg-white" />
+            </div>
+
+            <div>
+              <input type="text" name="company" placeholder="company.com" class="w-full px-4 py-3 rounded-xl border border-neutral-200 text-xs focus:outline-none focus:border-black bg-white" />
+            </div>
+
+            <div>
+              <select name="service" class="w-full px-4 py-3 rounded-xl border border-neutral-200 text-xs focus:outline-none focus:border-black bg-white">
+                <option value="Creative Subscription ($799/mo)">Creative Subscription ($799/mo)</option>
+                <option value="Creative + Web ($1,499/mo)" selected>Creative + Web Subscription ($1,499/mo)</option>
+                <option value="Scale Plan ($2,499/mo)">Scale Enterprise ($2,499/mo)</option>
+                <option value="Custom Project Inquiry">Custom Project Inquiry</option>
+              </select>
+            </div>
+
+            <div>
+              <textarea name="message" rows="4" required placeholder="Tell us what you're looking to create, what you need help with, or anything else you'd like us to know." class="w-full px-4 py-3 rounded-xl border border-neutral-200 text-xs focus:outline-none focus:border-black bg-white"></textarea>
+            </div>
+
+            <!-- Human Check Challenge -->
+            <div class="p-4 rounded-xl bg-white border border-neutral-200 flex flex-wrap items-center justify-between gap-4">
+              <span class="text-xs text-neutral-600 font-medium">Please prove you are human by selecting the heart:</span>
+              <div class="flex items-center gap-3 text-lg" id="human-check-icons">
+                <button type="button" data-val="heart" class="p-2 rounded-lg hover:bg-neutral-100 transition-colors">♥</button>
+                <button type="button" data-val="home" class="p-2 rounded-lg hover:bg-neutral-100 transition-colors">🏠</button>
+                <button type="button" data-val="coffee" class="p-2 rounded-lg hover:bg-neutral-100 transition-colors">☕</button>
+              </div>
+            </div>
+            <input type="hidden" name="human_verified" id="human-verified-input" value="false" />
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-editorial-dark text-white text-xs font-bold hover:bg-neutral-800 transition-colors flex items-center justify-center gap-2">
+              <span>Start the Conversation</span>
+              <span>➔</span>
+            </button>
+
+            <!-- Feedback -->
+            <div id="v-form-feedback" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs text-center font-medium">
+              Thank you! Your project request has been submitted. We'll be in touch shortly.
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dark CTA Card with Glowing Pixel P Logo -->
+  <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="bg-[#0B0D11] text-white p-10 sm:p-16 rounded-3xl border border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+        
+        <div class="max-w-lg z-10">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight font-display mb-4">
+            Your next creative request is waiting.
+          </h2>
+          <p class="text-xs sm:text-sm text-neutral-400 mb-8">
+            One creative partner for the design and development work that keeps your business moving.
+          </p>
+          <a href="#pricing" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white text-black text-xs font-bold hover:bg-neutral-200 transition-colors">
+            <span>Start a Project</span>
+            <span>➔</span>
+          </a>
+        </div>
+
+        <div class="relative z-10 flex-shrink-0">
+          <div class="w-40 h-40 rounded-full bg-brand-lime flex items-center justify-center p-3 shadow-2xl neon-border">
+            <div class="w-full h-full rounded-full bg-brand-lime flex items-center justify-center text-black font-black text-6xl">
+              P
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 bg-white border-t border-neutral-200 text-neutral-600">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+        
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-7 h-7 rounded-md bg-brand-lime flex items-center justify-center font-black text-black text-sm">P</div>
+            <span class="text-xl font-bold tracking-tight text-editorial-dark font-display">PixelSprings</span>
+          </div>
+          <p class="text-xs text-neutral-500 mb-6 max-w-xs">
+            Your creative team, without the overhead.
+          </p>
+          <div class="flex items-center gap-4 text-neutral-400">
+            <span class="hover:text-black cursor-pointer text-xs">Facebook</span>
+            <span class="hover:text-black cursor-pointer text-xs">Instagram</span>
+            <span class="hover:text-black cursor-pointer text-xs">X (Twitter)</span>
+            <span class="hover:text-black cursor-pointer text-xs">LinkedIn</span>
+          </div>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="text-xs font-bold text-editorial-dark uppercase tracking-wider mb-4">Useful Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#services" class="hover:text-black">➔ About Us</a></li>
+            <li><a href="#work" class="hover:text-black">➔ Work</a></li>
+            <li><a href="#services" class="hover:text-black">➔ Services</a></li>
+            <li><a href="#pricing" class="hover:text-black">➔ Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 flex flex-col md:items-end justify-between">
+          <div class="text-xs font-semibold text-neutral-500 mb-3 text-right">
+            Texas-based. Serving clients worldwide.
+          </div>
+          <div class="w-24 h-auto opacity-80">
+            <img src="assets/texas_map.jpg" alt="Texas map" class="w-full h-auto object-contain" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-neutral-200 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-400 gap-4">
+        <span>© 2026 PixelSprings. All rights reserved.</span>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.v-faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const ans = item.querySelector('.v-faq-answer');
+        const icon = item.querySelector('.v-faq-icon');
+        const isHidden = ans.classList.contains('hidden');
+
+        document.querySelectorAll('.v-faq-answer').forEach(a => a.classList.add('hidden'));
+        document.querySelectorAll('.v-faq-icon').forEach(i => i.textContent = '+');
+
+        if (isHidden) {
+          ans.classList.remove('hidden');
+          icon.textContent = '−';
+        }
+      });
+    });
+
+    // Mobile Menu
+    const vBtn = document.getElementById('vibrant-mobile-btn');
+    const vMenu = document.getElementById('vibrant-mobile-menu');
+    vBtn.addEventListener('click', () => vMenu.classList.toggle('hidden'));
+    document.querySelectorAll('.v-link').forEach(l => l.addEventListener('click', () => vMenu.classList.add('hidden')));
+
+    // Human check
+    const heartBtns = document.querySelectorAll('#human-check-icons button');
+    const verifiedInput = document.getElementById('human-verified-input');
+    heartBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        heartBtns.forEach(b => b.classList.remove('bg-brand-lime/20', 'border', 'border-brand-lime'));
+        btn.classList.add('bg-brand-lime/20', 'border', 'border-brand-lime');
+        if (btn.dataset.val === 'heart') {
+          verifiedInput.value = 'true';
+        } else {
+          verifiedInput.value = 'false';
+        }
+      });
+    });
+
+    // Contact Form Local Persistence
+    const vForm = document.getElementById('vibrant-contact-form');
+    const vFeedback = document.getElementById('v-form-feedback');
+    vForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(vForm);
+      const data = Object.fromEntries(formData.entries());
+      data.timestamp = new Date().toISOString();
+
+      const existing = JSON.parse(localStorage.getItem('pixelsprings_vibrant_leads') || '[]');
+      existing.push(data);
+      localStorage.setItem('pixelsprings_vibrant_leads', JSON.stringify(existing));
+
+      vFeedback.classList.remove('hidden');
+      vForm.reset();
+      heartBtns.forEach(b => b.classList.remove('bg-brand-lime/20', 'border', 'border-brand-lime'));
+      setTimeout(() => vFeedback.classList.add('hidden'), 5000);
+    });
+  </script>
+
+
+  <!-- Floating Live Switcher Widget -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-neutral-900/95 text-white px-4 py-2.5 rounded-full border border-lime-400/50 shadow-2xl backdrop-blur-md text-xs font-semibold">
+    <a href="../index.html" class="hover:text-lime-400 transition-colors flex items-center gap-1.5">
+      <span>✦</span>
+      <span class="hidden sm:inline">Portal</span>
+    </a>
+    <span class="text-neutral-600">|</span>
+    <span class="text-neutral-400 hidden sm:inline">Design 2 (Vibrant)</span>
+    <span class="text-neutral-600 hidden sm:inline">•</span>
+    <a href="../design1-editorial/index.html" class="text-lime-400 hover:text-lime-300 transition-colors flex items-center gap-1">
+      <span>Switch to Design 1 (Editorial)</span>
+      <span>➔</span>
+    </a>
+  </div>
+
+</body>
+</html>

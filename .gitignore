@@ -1,0 +1,4 @@
+extracted_designs/
+*.pyc
+__pycache__/
+.DS_Store
